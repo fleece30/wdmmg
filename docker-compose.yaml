@@ -1,0 +1,8 @@
+services:
+  ui:
+    build:
+      context: ./ui
+    container_name: wdmmg-frontend
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
